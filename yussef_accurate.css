@@ -12,22 +12,63 @@ h2,
 h3 {
   margin: 0;
 }
-header.hero {
-  background-image: url("header.jpg");
+header {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 5px 8px;
+}
+header .logo {
+  width: 105px;
+  height: 16px;
+  background-image: url("./img/logo.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+header .text-search input {
+  all: unset;
+  appearance: none;
+  border: none;
+  flex: 1;
+  max-width: 120px;
+  height: 30px;
+  background-color: transparent;
+  font-size: 0.9rem;
+  background-image: url("./img/seach.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding-left: 16px;
+  border-bottom: 1px solid #000;
+}
+.hero {
+  background-image: url("./img/yussefdays.jpg");
   background-size: cover;
-  background-position: center;
-  height: 180px;
+  background-position: 0 0;
+  height: 120px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
-header.hero h1 {
+.hero h1 {
   color: #000;
   font-size: 1.8rem;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8), -1px -1px 2px rgba(255,255,255,0.8), -1px 1px 2px rgba(255,255,255,0.8), 1px -1px 2px rgba(255,255,255,0.8);
   margin: 0;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.hero h1 .static {
+  font-size: 0.8rem;
+}
+.hero h1 .member {
+  font-size: 1.2rem;
 }
 section {
   background: #fff;
@@ -83,6 +124,9 @@ ul {
 .scroll-card > p > a {
   font-weight: bold;
   margin-bottom: 8px;
+}
+.scroll-card .personnel {
+  max-width: 200px;
 }
 .media-title {
   margin-bottom: 16px;
@@ -149,7 +193,7 @@ ul {
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  margin: 0.5rem 0;
+  margin: 16px 0;
 }
 .tab {
   flex: 1;
